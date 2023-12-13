@@ -14,6 +14,9 @@ app.get("/youtube", (req, res) => {
 app.get("/github", (req, res) => {
   res.json({ name: "anshul verma" });
 });
+app.get("/login", (req, res) => {
+  res.json({ username: "anshul verma", password: 1234 });
+});
 
 app.listen(process.env.PORT, () => {
   console.log(`Server run at port ${PORT}`);
